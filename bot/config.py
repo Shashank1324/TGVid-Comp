@@ -4,9 +4,9 @@
 from decouple import config
 
 try:
-    API_ID = environ.get('API_ID',cast=int"11760418") 
-    API_HASH = environ.get('API_HASH',"1087bd9fc871216be0e86287e5c50ac3") 
-    BOT_TOKEN = environ.get('BOT_TOKEN',"6525864792:AAHoeiRNOQmdRD4GFyRo4Ht0vZtccEOWk10")
+    API_ID = environ.get('API_ID',cast=int"16621664") 
+    API_HASH = environ.get('API_HASH',"8b283f2943729318995738b5963f0bcc") 
+    BOT_TOKEN = environ.get('BOT_TOKEN',"6614340340:AAFlzPQITbWoH9BYYKpWPfNb6xygI2IXWDI")
     DEV = 6561715152
     OWNER = config("OWNER","6561715152")
     ffmpegcode = ["-preset faster -c:v libx265 -s 854x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By TGVid-Comp (https://github.com/Zylern/TGVid-Comp)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
